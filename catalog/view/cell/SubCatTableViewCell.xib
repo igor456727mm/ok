@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="SubCatTableViewCell" customModule="_4_ok_ru" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKY-7j-jJy">
+                        <rect key="frame" x="124" y="0.0" width="179" height="50"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E4E-SS-ROM">
+                        <rect key="frame" x="16" y="0.0" width="94" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="94" id="dm1-PT-1b0"/>
+                            <constraint firstAttribute="height" constant="50" id="ndI-Yk-vNM"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="E4E-SS-ROM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="A1y-oK-mBK"/>
+                    <constraint firstAttribute="bottom" secondItem="vKY-7j-jJy" secondAttribute="bottom" constant="30" id="C6K-qx-gDG"/>
+                    <constraint firstItem="E4E-SS-ROM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="GJM-fV-GAy"/>
+                    <constraint firstItem="vKY-7j-jJy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HKC-pR-rzD"/>
+                    <constraint firstItem="vKY-7j-jJy" firstAttribute="leading" secondItem="E4E-SS-ROM" secondAttribute="trailing" constant="14" id="fOh-Fz-KSb"/>
+                    <constraint firstAttribute="trailing" secondItem="E4E-SS-ROM" secondAttribute="trailing" constant="210" id="hQe-Zs-lzb"/>
+                    <constraint firstAttribute="trailing" secondItem="vKY-7j-jJy" secondAttribute="trailing" constant="17" id="ujX-af-bMm"/>
+                    <constraint firstAttribute="bottom" secondItem="E4E-SS-ROM" secondAttribute="bottom" constant="30" id="yGy-Hc-vzg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageCat" destination="E4E-SS-ROM" id="0DS-E3-S6G"/>
+                <outlet property="title" destination="vKY-7j-jJy" id="hQ8-bG-QyJ"/>
+            </connections>
+            <point key="canvasLocation" x="149.27536231884059" y="94.419642857142847"/>
+        </tableViewCell>
+    </objects>
+</document>
